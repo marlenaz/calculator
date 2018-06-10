@@ -1,0 +1,49 @@
+.calculator {
+  background-color: pink;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 700px;
+  border: solid black;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.display {
+  padding: 7px;
+  background-color: grey;
+  display: block;
+  margin: 40px;
+  width: 500px;
+  height: 100px;
+  border: solid black;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.buttons {
+  margin: 40px;
+}
+
+.delete {
+  margin-bottom: 40px;
+}
+
+.delete button {
+  width: 252px;
+  height: 60px;
+  padding: 0px;
+  margin: 2px;
+
+}
+
+.small {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.small button {
+  width: 85px;
+  height: 85px;
+}
