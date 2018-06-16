@@ -10,7 +10,7 @@
   text-align: center;
 }
 
-.display {
+#display {
   padding: 7px;
   background-color: grey;
   display: block;
