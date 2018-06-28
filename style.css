@@ -29,10 +29,13 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 30px;
-  color: #ffffcc;
+  color: #4d4d4d;
 }
 
-.buttons {
+.buttons button:hover {
+  color: #a1458a;
+  font-weight: bold;
+  text-shadow: 10px;
 
 }
 
@@ -83,5 +86,9 @@ body {
 
 .equal {
   background-color: #b3b3b3;
-  border-color: #a1458a;
+}
+
+h1 {
+  color: #d9d9d9;
+  background-color: #b3b3b3;
 }
