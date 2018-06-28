@@ -32,13 +32,6 @@ body {
   color: #4d4d4d;
 }
 
-.buttons button:hover {
-  color: #a1458a;
-  font-weight: bold;
-  text-shadow: 10px;
-
-}
-
 .delete {
   margin-bottom: 40px;
 }
@@ -91,4 +84,16 @@ body {
 h1 {
   color: #d9d9d9;
   background-color: #b3b3b3;
+}
+
+.operator:hover {
+  color: #a1458a;
+  font-weight: bold;
+  text-shadow: 10px;
+}
+.number:hover,.delete button:hover, .equal:hover {
+  color: #d9d9d9;
+  font-weight: bold;
+  text-shadow: 10px;
+
 }
