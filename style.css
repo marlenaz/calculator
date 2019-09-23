@@ -1,99 +1,129 @@
-body {
-  background-image: url('3.jpg');
-  background-size: 100%;
-  font-family: 'Buda';
-}
-.calculator {
-  background-color: white;
-  box-shadow: 5px 10px 20px grey;
-  width: 500px;
-  height: 700px;
-  border: double #d9d9d9 7px;
-  border-radius: 15px;
-  background-image: url('5.jpg');
-  background-size: cover;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400&display=swap');
+/* 'Montserrat', sans-serif */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  margin: 0;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:
+    linear-gradient(to left, rgba(4, 85, 81, 0.49), rgba(59, 19, 65, 0.72)),
+    url("images/bck.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.calculator {
+  width: 300px;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  box-shadow: 1px 4px 15px -3px rgba(0,0,0,1);
 }
 
 #display {
-  padding: 7px;
-  background-color: rgb(175, 186, 210);
-  box-shadow: inset 5px 5px 30px 10px #ccf5ff;
+  width: 100%;
+  height: 110px;
+  background: white;
+}
+
+.buttons {
+  height: 77%;
+  width: 100%;
+  padding: 30px;
+  padding-top: 80px;
+  align-self: flex-end;
+  background-color: #592474;
+  background-image: url("images/calculator.png");
+  background-size: cover;
+  position: relative;
   display: flex;
-  margin: 40px;
-  width: 400px;
-  height: 100px;
-  border: double #d9d9d9 7px;
-  border-radius: 15px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  color: #4d4d4d;
+  flex-direction: column;
 }
 
+button {
+  padding: 10px;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 300;
+}
 .delete {
-  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
 }
-
-.delete button {
-  width: 200px;
-  height: 60px;
-  padding: 0px;
-  margin: 2px;
-  font-family: 'Buda';
+#del {
+  color: #c95b5b;
+}
+#backspace i {
   font-size: 30px;
-  cursor: pointer;
-  background-color: #b3b3b3;
-  border-radius: 12px;
-
+  width: 50px;
+  color: #c95b5b;
 }
-
 .small {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 20px;
-  margin: 60px;
-  justify-content: center;
-
+  align-items: center;
 }
-
-.small button {
-  width: 85px;
-  height: 85px;
-  font-family: 'Buda';
-  font-size: 30px;
-  cursor: pointer;
-  text-align: center;
-  border-radius: 12px;
-}
-
-.number {
-  background-color: #b3b3b3;
-}
-
-.operator {
-  background-color: #78677e;
-}
-
 .equal {
-  background-color: #b3b3b3;
-}
-
-h1 {
-  color: #d9d9d9;
-  background-color: #b3b3b3;
-}
-
-.operator:hover {
-  color: #a1458a;
-  font-weight: bold;
-  text-shadow: 10px;
-}
-.number:hover,.delete button:hover, .equal:hover {
-  color: #d9d9d9;
-  font-weight: bold;
-  text-shadow: 10px;
-
+  color: #12b4d9;
 }
