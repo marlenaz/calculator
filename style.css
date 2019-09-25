@@ -63,8 +63,8 @@ body {
   justify-content: center;
   align-items: center;
   background-image:
-    linear-gradient(to left, rgba(4, 85, 81, 0.49), rgba(59, 19, 65, 0.72)),
-    url("images/bck.jpg");
+    linear-gradient(to right, #4f7b826b, #0c436bde);
+
   background-size: cover;
   background-position: center;
 }
@@ -82,7 +82,14 @@ body {
 #display {
   width: 100%;
   height: 110px;
+  padding: 30px;
+  word-wrap: break-word;
+  word-break: break-all;
   background: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: #518692;
+  text-align: center;
 }
 
 .buttons {
@@ -92,7 +99,7 @@ body {
   padding-top: 80px;
   align-self: flex-end;
   background-color: #592474;
-  background-image: url("images/calculator.png");
+  background-image: url("images/calculator2.png");
   background-size: cover;
   position: relative;
   display: flex;
@@ -112,12 +119,12 @@ button {
   justify-content: space-between;
 }
 #del {
-  color: #c95b5b;
+  color: #ea8585;
 }
 #backspace i {
   font-size: 30px;
   width: 50px;
-  color: #c95b5b;
+  color: #ea8585;
 }
 .small {
   display: grid;
@@ -125,5 +132,5 @@ button {
   align-items: center;
 }
 .equal {
-  color: #12b4d9;
+  color: #18cef8;
 }
