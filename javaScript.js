@@ -17,19 +17,19 @@ let displayValue;
 //BASIC MATH OPERATORS
 let add = function(a, b) {
   return a + b;
-}
+};
 
 let subtract = function(a, b) {
   return a - b;
-}
+};
 
 let multiply = function(a, b) {
   return a * b;
-}
+};
 
 let divide = function(a, b) {
   return a / b;
-}
+};
 //Main count function
 let operate = function(a, b, operator) {
 
@@ -42,15 +42,15 @@ let operate = function(a, b, operator) {
     else if (operator == "-") {
       result = subtract(a, b);
     }
-    else if (operator == "*") {
+    else if (operator == "×") {
       result = multiply(a, b);
     }
-    else if (operator == "/") {
+    else if (operator == "÷") {
       result = divide(a, b);
     }
     result = Math.round(result * 1000000) / 1000000;
     display.textContent = result;
-}
+};
 
 //BULLET BUTTON ENABLE/DISABLE
 var decimalDisable = function(string) {
@@ -59,7 +59,7 @@ var decimalDisable = function(string) {
   if (dot1 > 0 ) {
     decimal.disabled = true;
   }
-}
+};
 
 //DISPLAY function
 
@@ -85,7 +85,7 @@ smallButtons.forEach(function(button) {
         }
         else if (button.className == "number") {
           inputValue += button.innerText;
-          display.textContent = inputValue
+          display.textContent = inputValue;
           result2 = ""; // to delete the temporary variable if someone press = and new input number right after (doesnt want to continue with result of his previous action)
           decimalDisable(inputValue); //to make sure there is only one decimal point
           console.log(inputValue);
@@ -155,6 +155,3 @@ backspace.addEventListener("click", () => {
   }
 
 });
-//add event litener na spacje i jeżeli dany del jest true to backspace
-//wygląd
-//Photo by Miguel Á. Padriñán from Pexels

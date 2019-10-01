@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400&display=swap');
-/* 'Montserrat', sans-serif */
 
+/* 'Montserrat', sans-serif */
 /* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
   License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,30 +24,37 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 body {
   line-height: 1;
   margin: 0;
 }
+
 ol, ul {
   list-style: none;
 }
+
 blockquote, q {
   quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -56,15 +62,15 @@ table {
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   background-image:
     linear-gradient(to right, #4f7b826b, #0c436bde);
-
   background-size: cover;
   background-position: center;
 }
@@ -76,7 +82,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   background: white;
-  box-shadow: 1px 4px 15px -3px rgba(0,0,0,1);
+  box-shadow: 1px 4px 15px -3px rgba(0, 0, 0, 1);
 }
 
 #display {
@@ -114,23 +120,28 @@ button {
   color: white;
   font-weight: 300;
 }
+
 .delete {
   display: flex;
   justify-content: space-between;
 }
+
 #del {
   color: #ea8585;
 }
+
 #backspace i {
   font-size: 30px;
   width: 50px;
   color: #ea8585;
 }
+
 .small {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
 }
+
 .equal {
   color: #18cef8;
 }
