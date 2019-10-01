@@ -14,7 +14,7 @@
 One of [The Odin Project course assignment](https://www.theodinproject.com/courses/web-development-101/lessons/calculator). Student had to bulid simple calculator with all the basic functions, such as adding, subtracting, multiplying and divideing.
 
 ## Screenshots
-![Calculator screenshot](imgages/screen.png)
+![Calculator screenshot](images/screen.png)
 
 ## Technologies
 * CSS / CSS3
